@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#32180e">
+<meta name="description" content="Golden Crumbs Cookies — crunchy outside, soft and chocolatey inside.">
+<title>Golden Crumbs Cookies | A Chunk of Joy</title>
+<style>
+:root{--cocoa:#32180e;--brown:#572a16;--burnt:#9a4b23;--orange:#c86a32;--gold:#efc47d;--cream:#ffe8c1;--pale:#fff2dc;--ink:#281208}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cocoa);color:var(--pale);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.11;z-index:-1;background-image:radial-gradient(#f2bc72 .7px,transparent .8px);background-size:10px 10px}
+header{background:#2a130a;border-bottom:1px solid #9d552d;padding:16px 0}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font:bold 1.05rem Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}.navlinks{display:flex;gap:22px;font: .82rem Arial,sans-serif;color:#f7d6a5}
+.btn{display:inline-block;background:var(--gold);color:#30160b;padding:12px 18px;font:bold .78rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--gold)}.btn.outline{background:transparent;color:var(--gold)}
+.hero{background:radial-gradient(ellipse at 72% 42%,#9e4e25 0,transparent 36%),linear-gradient(120deg,#32180e,#582713 62%,#32180e);border-bottom:2px solid #d9783b;overflow:hidden}
+.hero-inner{display:grid;grid-template-columns:1fr .9fr;gap:35px;align-items:center;min-height:590px;padding:60px 0}
+.kicker{font:bold .7rem Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+h1{font:normal clamp(3.2rem,7vw,6.1rem)/.88 Arial,sans-serif;letter-spacing:-.065em;text-transform:uppercase;margin:20px 0 18px;color:#ffe8c1}h1 span{display:block;color:#d77b43}h1 small{display:block;font-size:.19em;letter-spacing:.48em;text-align:center;margin-top:13px}
+.hero p{font-size:1.07rem;color:#f5d9b1;max-width:480px}.hero .micro{font: .76rem Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#f2c987}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.cookie-stage{min-height:390px;position:relative;display:grid;place-items:center;background:radial-gradient(ellipse,#a8592c 0,transparent 65%)}
+.cookie-stack{position:relative;width:min(95%,390px);height:330px;filter:drop-shadow(0 18px 18px #170902aa)}
+.cookie{position:absolute;width:78%;height:44%;left:11%;border-radius:48% 52% 45% 50%;border:7px solid #8a421e;background:
+radial-gradient(ellipse at 30% 20%,#d9995c55,transparent 28%),
+radial-gradient(circle at 23% 35%,#2c130b 0 5%,transparent 6%),
+radial-gradient(circle at 59% 22%,#f8d7a0 0 5%,transparent 6%),
+radial-gradient(circle at 75% 54%,#301308 0 6%,transparent 7%),
+radial-gradient(circle at 43% 72%,#f8d7a0 0 5%,transparent 6%),
+radial-gradient(circle at 32% 62%,#2b1209 0 7%,transparent 8%),
+radial-gradient(circle at 60% 52%,#3a190b 0 6%,transparent 7%),
+radial-gradient(circle at 76% 28%,#f6d19a 0 4%,transparent 5%),
+radial-gradient(ellipse at 35% 28%,#b66a35,#8d461f 68%,#6c3217);
+box-shadow:inset 0 7px 9px #ffcf8c55,inset 0 -13px 12px #3a180b88}
+.cookie:nth-child(1){top:0;transform:rotate(-8deg)}.cookie:nth-child(2){top:21%;transform:rotate(5deg);left:8%}.cookie:nth-child(3){top:42%;transform:rotate(-4deg);left:13%}.cookie:nth-child(4){top:62%;transform:rotate(7deg);left:8%}
+.seal{position:absolute;left:0;top:22%;width:86px;height:86px;border:3px double var(--gold);border-radius:50%;display:grid;place-items:center;text-align:center;font:bold .65rem/1.2 Arial,sans-serif;color:var(--gold);transform:rotate(-13deg);background:#3b1b0d}
+section{padding:75px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 40px}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:normal;line-height:1.05;margin:12px 0}.section-head p{color:#edc99a}.section-head .kicker{color:#e99a5d}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid #9e592f;background:#472312;padding:25px;position:relative}.card:before{content:"";position:absolute;top:0;left:0;width:45px;height:3px;background:var(--gold)}.card .num{font: .8rem Arial,sans-serif;color:var(--gold);letter-spacing:.18em}.card h3{font-weight:normal;font-size:1.35rem;margin:12px 0 8px}.card p{font-size:.93rem;color:#e7c39b;margin:0}
+.story{background:#f6d9ae;color:#30170b;border-top:3px solid #d77b43;border-bottom:3px solid #d77b43}.story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.story-box{padding:30px;border:1px solid #9d552d;outline:1px solid #9d552d;outline-offset:8px;text-align:center;background:linear-gradient(135deg,#4c2411,#9c4d23);color:#ffe7c2}.story-box strong{display:block;font:bold 2.5rem/.95 Arial,sans-serif;text-transform:uppercase;margin:16px 0}.story h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:normal;line-height:1.05}.story p{color:#63402a}.story .kicker{color:#91451f}
+.nutrition{background:#f6e5cc;color:#32180e}.nutrition .section-head p{color:#69432a}.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.info{border:1px solid #b87742;padding:26px;background:#fff0d9}.info h3{margin-top:0;font-weight:normal;font-size:1.3rem;border-bottom:1px solid #c47c43;padding-bottom:10px}.info p{font-size:.9rem;color:#5b3822}.nutri-table{width:100%;border-collapse:collapse;font: .85rem Arial,sans-serif}.nutri-table td{padding:8px 3px;border-bottom:1px solid #e0c4a0}.nutri-table td:last-child{text-align:right;font-weight:bold}
+.contact{text-align:center;background:linear-gradient(120deg,#35190d,#6a3016)}.contact p{color:#f0d0a5;max-width:580px;margin:0 auto 24px}footer{border-top:1px solid #9c542c;padding:22px 0;color:#e6bf8d;font: .76rem Arial,sans-serif}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+@media(max-width:760px){.hero-inner,.story-grid{grid-template-columns:1fr}.hero-inner{padding:50px 0;gap:8px}.cookie-stage{min-height:320px}.cookie-stack{height:285px;width:min(95%,340px)}.cards,.info-grid{grid-template-columns:1fr}.navlinks{display:none}section{padding:58px 0}.seal{left:3%}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#">Golden Crumbs</a><nav class="navlinks"><a href="#story">Our story</a><a href="#details">Ingredients</a><a href="#contact">Contact</a></nav><a class="btn" href="#contact">Get in touch</a></div></header>
+<main>
+<section class="hero"><div class="wrap hero-inner"><div><div class="kicker">Baked with love ♡</div><h1>Golden<span>Crumbs</span><small>COOKIES</small></h1><p class="micro">Crunchy outside. Choco heaven inside.</p><p>Big chocolate chunks, rich cocoa, and a soft centre make every bite a little celebration. Pair with milk, coffee, or your favourite moment of the day.</p><div class="actions"><a class="btn" href="#details">Discover the cookie</a><a class="btn outline" href="#contact">Order / enquire</a></div></div><div class="cookie-stage"><div class="cookie-stack"><div class="cookie"></div><div class="cookie"></div><div class="cookie"></div><div class="cookie"></div></div><div class="seal">Real<br>golden<br>crumbs</div></div></div></section>
+<section><div class="wrap"><div class="section-head"><div class="kicker">Our promise</div><h2>A chunk of joy.</h2><p>Made for your little moments—one rich, chocolatey bite at a time.</p></div><div class="cards"><article class="card"><div class="num">01 / THE BITE</div><h3>Crunchy outside</h3><p>A golden, toasted edge gives way to a softer centre for that satisfying cookie bite.</p></article><article class="card"><div class="num">02 / THE CHOCOLATE</div><h3>Big chunks, bold taste</h3><p>Chocolate chunks bring texture and a rich cocoa flavour to every mouthful.</p></article><article class="card"><div class="num">03 / THE MOMENT</div><h3>Bake • Share • Repeat</h3><p>Keep a pack for yourself or share the joy with someone who deserves a treat.</p></article></div></div></section>
+<section class="story" id="story"><div class="wrap story-grid"><div class="story-box"><span>Golden Crumbs Cookies</span><strong>A chunk<br>of joy.</strong><span>Made for your little moments</span></div><div><div class="kicker">The cookie story</div><h2>Real comfort.<br>Real chocolate.</h2><p>Golden Crumbs is all about that perfect cookie moment: a rich cocoa aroma, generous chocolate chunks, and a soft, comforting centre. Enjoy it as a little reward, a coffee companion, or a treat to share.</p><p>Our promise is simple: make the everyday feel a little more golden.</p></div></div></section>
+<section class="nutrition" id="details"><div class="wrap"><div class="section-head"><div class="kicker">Ingredients & product details</div><h2>Goodness worth knowing.</h2><p>Use the confirmed information from your recipe and packaging before making this page public.</p></div><div class="info-grid"><article class="info"><h3>Nutrition information</h3><p><strong>Typical values per 100 g</strong></p><table class="nutri-table"><tr><td>Energy</td><td>Add verified value</td></tr><tr><td>Fat</td><td>Add verified value</td></tr><tr><td>of which saturates</td><td>Add verified value</td></tr><tr><td>Carbohydrate / sugars</td><td>Add verified value</td></tr><tr><td>Protein / Salt</td><td>Add verified value</td></tr></table><p>Do not treat these placeholders as measured nutritional values.</p></article><article class="info"><h3>Ingredients</h3><p>Enter your actual ingredients here in the order required for your market and packaging.</p><p><strong>Allergens:</strong> Confirm the allergens from your recipe before publishing. Depending on the ingredients used, these may include wheat, milk, eggs, soy, or nuts.</p><p><strong>Storage:</strong> Store in a cool, dry place if that matches your product label.</p></article></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="kicker">Let’s make it golden</div><h2>Ready for a chunk of joy?</h2><p>Replace the link below with your real WhatsApp order link or social profile so customers can contact Golden Crumbs directly.</p><a class="btn" href="https://wa.me/" target="_blank" rel="noopener">Add your WhatsApp link</a></div></section>
+</main><footer><div class="wrap foot"><span>© 2026 Golden Crumbs Cookies</span><span>Bake • Share • Repeat</span></div></footer>
+</body></html>
